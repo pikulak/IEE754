@@ -16,7 +16,7 @@ x = eval(input("Podaj liczbe:"))
 p = int((math.log(abs(x),2)))
 cz_u = float('0.' + str(x / math.pow(2,p))[2:])
 b = ''
-if x >= 0:
+if x > 0:
     b = b + '0' + bin(1023+p)[2:] + mantysa(cz_u)
 elif x < 0:
     b = b + '1' + bin(1023-p)[2:] + mantysa(cz_u)
